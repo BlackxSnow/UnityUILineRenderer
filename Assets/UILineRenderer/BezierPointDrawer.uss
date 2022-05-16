@@ -1,0 +1,47 @@
+.GridContainer {
+    flex-direction: row;
+}
+
+.GridContainer .unity-base-field__label {
+    min-width: 0;
+    flex-grow: 1;
+    overflow: visible;
+    flex-shrink: 10;
+    flex-basis: 50px;
+}
+
+.GridContainer .unity-base-field {
+    flex-grow: 1;
+}
+
+.GridContainer .unity-object-field__input {
+    flex-grow: 5;
+}
+
+.GridContainer .unity-toggle__input {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.GridContainer .unity-vector2-field__input {
+    flex-grow: 10;
+}
+
+.GridContainer .unity-composite-field {
+    flex-grow: 1;
+}
+
+.unity-composite-field__field-spacer {
+    flex-grow: 0;
+    flex-basis: 0;
+}
+
+.unity-composite-field__field > .unity-base-field__label {
+    flex-grow: 0;
+    flex-basis: auto;
+}
+
+.GridContainer > .unity-toggle {
+    max-width: 126px;
+    min-width: 126px;
+}

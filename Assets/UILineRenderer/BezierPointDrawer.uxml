@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="BezierPointDrawer.uss" />
+    <ui:Foldout text=" Bezier Point" style="border-left-color: rgb(174, 174, 174); border-right-color: rgb(174, 174, 174); border-top-color: rgb(174, 174, 174); border-bottom-color: rgb(174, 174, 174); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; padding-left: 1px; padding-right: 1px; padding-top: 1px; padding-bottom: 1px; margin-bottom: 5px; margin-top: 5px;">
+        <ui:VisualElement name="TargetContainer" class="GridContainer">
+            <ui:Toggle label="Target transform?" binding-path="TransformAsTarget" name="TransformAsTarget" style="margin-right: 5px;" />
+            <uie:ObjectField label="Target" name="TransformTarget" binding-path="Target" type="UnityEngine.Transform, UnityEngine.CoreModule" style="display: flex; flex-shrink: 1;" />
+            <uie:Vector2Field label="Position" name="Position" binding-path="Position" style="display: none;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="PreControlContainer" class="GridContainer">
+            <ui:Toggle label="Pre-Control?" binding-path="PreControl" name="PreBool" style="margin-right: 5px;" />
+            <uie:Vector2Field label="Offset" name="PreOffset" binding-path="PreControlOffset" />
+        </ui:VisualElement>
+        <ui:VisualElement name="PostControlContainer" class="GridContainer">
+            <ui:Toggle label="Post-Control?" binding-path="PostControl" name="PostBool" style="margin-right: 5px;" />
+            <uie:Vector2Field label="Offset" name="PostOffset" binding-path="PostControlOffset" />
+        </ui:VisualElement>
+    </ui:Foldout>
+</ui:UXML>
